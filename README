@@ -1,11 +1,13 @@
 shee
---------------------------------------------------------------------------------
+----
 
 A poor implementation of `tree` in plain `sh`.
 
+Screenshot: https://user-images.githubusercontent.com/36552788/125976452-f2aa0db1-c79d-459f-8eea-dc6ecc066e70.png
+
 
 install
---------------------------------------------------------------------------------
+-------
 
 Clone the repo
 
@@ -28,12 +30,16 @@ Add ~/.bin to PATH in $SHELL's startup file
 
 
 usage
---------------------------------------------------------------------------------
+-----
 
 shee [OPTION]... [DIRECTORY]...
 
-With no DIRECTORY, default to using `$PWD`.
+With no DIRECTORY, default to using \`\$PWD\`.
+
+Exclude directories by assigning a colon separated list
+to SHEE_IGNORE_DIRS in \$SHELL\'s startup file.
+
+Example: export SHEE_IGNORE_DIRS=.git:cache:build
 
   -d, --dirs-only          only show directories in output
   -h, --help               display this help and exit
-
