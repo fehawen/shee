@@ -1,0 +1,39 @@
+shee
+--------------------------------------------------------------------------------
+
+A poor implementation of `tree` in plain `sh`.
+
+
+install
+--------------------------------------------------------------------------------
+
+Clone the repo
+
+    $ git clone https://github.com/fehawen/shee.git
+
+Change working directory to shee
+
+    $ cd shee
+
+Install shee [*]
+
+    $ make install
+
+Add ~/.bin to PATH in $SHELL's startup file
+
+    export PATH=~/bin:$PATH
+
+
+[*] installs to ~/bin by default, and `make install` should thus not run as root
+
+
+usage
+--------------------------------------------------------------------------------
+
+shee [OPTION]... [DIRECTORY]...
+
+With no DIRECTORY, default to using `$PWD`.
+
+  -d, --dirs-only          only show directories in output
+  -h, --help               display this help and exit
+
