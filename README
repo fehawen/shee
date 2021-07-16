@@ -1,5 +1,5 @@
 shee
-----
+--------------------------------------------------------------------------------
 
 A poor implementation of `tree` in plain `sh`.
 
@@ -7,7 +7,7 @@ Screenshot: https://user-images.githubusercontent.com/36552788/125976452-f2aa0db
 
 
 install
--------
+--------------------------------------------------------------------------------
 
 Clone the repo
 
@@ -30,7 +30,7 @@ Add ~/.bin to PATH in $SHELL's startup file
 
 
 usage
------
+--------------------------------------------------------------------------------
 
 shee [OPTION]... [DIRECTORY]...
 
