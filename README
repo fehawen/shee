@@ -21,10 +21,6 @@ Install shee
 
     $ make install
 
-Add ~/.bin to PATH in $SHELL's startup file
-
-    export PATH=~/bin:$PATH
-
 
 usage
 --------------------------------------------------------------------------------
