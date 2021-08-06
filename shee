@@ -80,7 +80,7 @@ A poor implementation of \`tree\` in plain \`sh\`.
 With no DIRECTORY, default to using \`\$PWD\`.
 
 Exclude directories by assigning a colon separated list
-to SHEE_IGNORE_DIRS in \$SHELL\'s startup file.
+to SHEE_IGNORE_DIRS in \$SHELL's startup file.
 
 Example: export SHEE_IGNORE_DIRS=.git:cache:build
 
