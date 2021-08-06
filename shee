@@ -95,8 +95,12 @@ main() {
     last_depth=0
 
     case $1 in
-        '-h'|'--help') usage ;;
         '-d'|'--dirs-only') dirs_only=1; target=$2 ;;
+        '-h'|'--help') usage ;;
+        -*)
+            die "${0##*/}: invalid option -- '${1##*-}'" \
+                "Try '${0##*/} --help' for more information."
+        ;;
         *) target=$1 ;;
     esac
 
