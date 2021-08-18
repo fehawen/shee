@@ -1,12 +1,12 @@
 PREFIX ?= /usr
+BINDIR ?= $(PREFIX)/bin
 
 all:
 	@echo Run \'make install\' to install shee.
 
 install:
-	@mkdir -p $(DESTDIR)$(PREFIX)/bin
-	@cp -p shee $(DESTDIR)$(PREFIX)/bin/shee
-	@chmod 755 $(DESTDIR)$(PREFIX)/bin/shee
+	install -d $(DESTDIR)$(BINDIR)
+	install -m 755 shee $(DESTDIR)$(BINDIR)
 
 uninstall:
-	@rm -f $(DESTDIR)$(PREFIX)/bin/shee
+	rm -f $(DESTDIR)$(BINDIR)/shee
