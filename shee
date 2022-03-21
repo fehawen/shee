@@ -114,7 +114,9 @@ main() {
         ignore=$*
     }
 
-    log "${target##*/}/" "┌─ "
+    trunk="${target%*/}"
+
+    log "${trunk##*/}/" "┌─ "
     loop "$target"
 
     n=0
