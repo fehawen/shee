@@ -5,8 +5,7 @@ all:
 	@echo Run \'make install\' to install shee.
 
 install:
-	install -d $(DESTDIR)$(BINDIR)
-	install -m 755 shee $(DESTDIR)$(BINDIR)
+	install -Dm 755 shee $(DESTDIR)$(BINDIR)/shee
 
 uninstall:
 	rm -f $(DESTDIR)$(BINDIR)/shee
